@@ -21,7 +21,7 @@ namespace my_books.Controllers
             _booksService = booksService;
         }
 
-        [HttpPost("get-all-books")]
+        [HttpGet("get-all-books")]
         public IActionResult GetAllBooks()
         {
             var allBooks = _booksService.GetAllBooks();
